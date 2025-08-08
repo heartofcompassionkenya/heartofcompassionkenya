@@ -5,6 +5,46 @@
     box-sizing: border-box;
 }
 
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+ul, ol {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
