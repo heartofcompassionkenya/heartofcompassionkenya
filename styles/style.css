@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-    background-color: red;
+    background-color: #b30000; /* deep red */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -57,7 +57,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: wheat;
+    color: #c6f6c6; /* pale green */
     text-decoration: underline;
 }
 
@@ -103,7 +103,7 @@ main {
 }
 
 .btn {
-    background-color: #e74c3c;
+    background-color: #4CAF50; /* green */
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -114,7 +114,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #c0392b;
+    background-color: #388e3c;
 }
 
 /* Intro Section */
@@ -125,7 +125,7 @@ main {
 
 .intro h2 {
     font-size: 2rem;
-    color: #c0392b;
+    color: #4CAF50;
     margin-bottom: 1rem;
 }
 
@@ -150,13 +150,13 @@ main {
 }
 
 .highlight-box h3 {
-    color: #c0392b;
+    color: #4CAF50;
     margin-bottom: 0.5rem;
 }
 
 /* Footer */
 footer {
-    background-color: #c0392b;
+    background-color: #b30000;
     color: white;
     text-align: center;
     padding: 15px;
@@ -166,51 +166,31 @@ footer {
 /* SECTION HEADINGS */
 section h2 {
   margin-bottom: 10px;
-  color: red;
+  color: #4CAF50;
 }
 
 /* LINKS */
 a {
-  color: red;
+  color: #b30000;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .highlights {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    header {
-        flex-direction: column;
-    }
-}
-
 /* Banner Style */
 .banner {
-    background-color: #fce4e4;
-    color: #c0392b;
+    background-color: #eaf7ea;
+    color: #388e3c;
     text-align: center;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 1rem;
-    border-top: 2px solid #c0392b;
-    border-bottom: 2px solid #c0392b;
+    border-top: 2px solid #4CAF50;
+    border-bottom: 2px solid #4CAF50;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     body {
         padding: 0 10px;
@@ -259,78 +239,7 @@ a:hover {
     }
 }
 
-/* Sidebar Style */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 220px;
-    background-color: #fce4e4;
-    padding-top: 2rem;
-    border-right: 2px solid #c0392b;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    z-index: 1000;
-}
-
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 1rem;
-}
-
-.sidebar nav ul li a {
-    color: #c0392b;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s ease;
-}
-
-.sidebar nav ul li a:hover {
-    background-color: #c0392b;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Push content to the right when sidebar is present */
-.main-content {
-    margin-left: 240px;
-    padding: 2rem;
-}
-
-/* Mobile-friendly sidebar (collapsible or stacked nav) */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        border-right: none;
-        border-bottom: 2px solid #c0392b;
-    }
-
-    .main-content {
-        margin-left: 0;
-        padding: 1rem;
-    }
-
-    .sidebar nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .sidebar nav ul li {
-        margin-bottom: 0.5rem;
-    }
-}
-
+/* Contact Page */
 .contact-section {
   max-width: 700px;
   margin: 2rem auto;
@@ -339,7 +248,7 @@ a:hover {
 
 .contact-section h1 {
   text-align: center;
-  color: #c21807;
+  color: #4CAF50;
 }
 
 .contact-form {
@@ -366,7 +275,7 @@ a:hover {
 }
 
 .contact-form button {
-  background-color: #c21807;
+  background-color: #4CAF50;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -377,14 +286,5 @@ a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #a01006;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  background-color: #f2f2f2;
-  color: #555;
-  font-size: 0.9rem;
+  background-color: #388e3c;
 }
