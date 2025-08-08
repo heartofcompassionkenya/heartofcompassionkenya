@@ -330,3 +330,21 @@ a:hover {
         width: 90%;
     }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a:focus, button:focus {
+  outline: 3px solid #4CAF50;
+  outline-offset: 2px;
+}
