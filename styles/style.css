@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em;
 }
 
-h1 { font-size: 2.5rem; }
+h1 { font-size: 2.5rem; color: #4CAF50; }
 h2 { font-size: 1.8rem; color: #4CAF50; }
 h3 { font-size: 1.4rem; color: #4CAF50; }
 
@@ -66,59 +66,100 @@ nav a.active {
     background-color: #4CAF50;
 }
 
-/* BANNER */
-.banner {
-    background-color: #eaf7ea;
-    color: #388e3c;
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/* HERO & PAGE BANNERS (Unified Style) */
-.hero, .about-banner, .programs-bg, .gallery-banner, .get-involved-bg, .contact-banner {
+/* BANNER SECTIONS */
+.hero, 
+.about-banner, 
+.programs-bg, 
+.gallery-banner, 
+.get-involved-bg, 
+.contact-banner {
     position: relative;
-    background-size: cover;
-    background-position: center;
+    height: 300px;
+    overflow: hidden;
     text-align: center;
-    padding: 4rem 2rem;
-    color: white;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 8px;
 }
 
-.hero::before, 
-.about-banner::before,
-.programs-bg::before,
-.gallery-banner::before,
-.get-involved-bg::before,
-.contact-banner::before {
-    content: '';
+/* BANNER BACKGROUND IMAGES */
+.hero, 
+.about-banner, 
+.programs-bg, 
+.gallery-banner, 
+.get-involved-bg, 
+.contact-banner {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* BANNER IMAGE (for pages where images are in HTML, remove absolute images) */
+
+/* BANNER OVERLAY */
+.hero .hero-overlay,
+.about-banner .overlay,
+.programs-bg .overlay,
+.gallery-banner .overlay,
+.get-involved-bg .overlay,
+.contact-banner .overlay {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* dark overlay for contrast */
-    z-index: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 8px;
 }
 
-.hero *, 
-.about-banner *, 
-.programs-bg *, 
-.gallery-banner *, 
-.get-involved-bg *, 
-.contact-banner * {
+/* BANNER TEXT */
+.hero-text,
+.about-banner > *:not(img):not(.overlay),
+.programs-bg > *:not(img):not(.overlay),
+.gallery-banner > *:not(img):not(.overlay),
+.get-involved-bg > *:not(img):not(.overlay),
+.contact-banner > *:not(img):not(.overlay) {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     color: white;
     text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
 }
 
-/* SPECIFIC BACKGROUND IMAGES */
-.hero { background-image: url('../images/image1.jpg'); }
-.about-banner { background-image: url('../images/image2.jpg'); height: 300px; display: flex; align-items: center; justify-content: center; }
-.programs-bg { background-image: url('../images/image3.jpg'); }
-.gallery-banner { background-image: url('../images/image4.jpg'); height: 300px; display: flex; align-items: center; justify-content: center; }
-.get-involved-bg { background-image: url('../images/image4.jpg'); }
-.contact-banner { background-image: url('../images/image4.jpg'); height: 300px; display: flex; align-items: center; justify-content: center; }
+/* Specifically force white text for home page hero-text */
+.hero-text h1,
+.hero-text p {
+    color: white !important;
+}
+
+/* BUTTONS */
+.btn,
+.theme-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.theme-btn:hover {
+    background-color: #388e3c;
+}
+
+/* BUTTON CONTAINERS */
+.banner-button-container,
+.center-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
 
 /* CONTENT SECTIONS */
 .intro {
@@ -207,24 +248,6 @@ nav a.active {
     background-color: #388e3c;
 }
 
-/* BUTTONS */
-.btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.btn:hover {
-    background-color: #388e3c;
-}
-
 /* FOOTER */
 footer {
     background-color: #b30000;
@@ -240,5 +263,16 @@ footer {
     }
     .highlight-box {
         width: 90%;
+    }
+    .hero, 
+    .about-banner, 
+    .programs-bg, 
+    .gallery-banner, 
+    .get-involved-bg, 
+    .contact-banner {
+        height: 200px;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
