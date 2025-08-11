@@ -44,7 +44,7 @@ header {
 }
 
 header h1 { margin: 0; }
-.logo img { height: 50px; }
+.logo img { height: 100px; }
 
 nav ul {
     list-style: none;
