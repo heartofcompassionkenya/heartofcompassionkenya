@@ -77,7 +77,7 @@ nav a.active {
     height: 300px;
     overflow: hidden;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
     max-width: 1200px;
     margin: 2rem auto;
     border-radius: 8px;
