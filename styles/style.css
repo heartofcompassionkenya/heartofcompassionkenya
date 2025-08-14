@@ -134,6 +134,12 @@ nav a.active {
     color: white !important;
 }
 
+.banner {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #4CAF50;
+}
+
 /* BUTTONS */
 .btn,
 .theme-btn {
@@ -183,6 +189,11 @@ nav a.active {
     width: 300px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.highlight-box:hover {
+    transform: translateY(-10px);
 }
 
 /* GALLERY GRID */
