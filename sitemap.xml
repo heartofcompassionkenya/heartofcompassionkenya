@@ -1,46 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home Page -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>1.00</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/index.html</loc>
+    <priority>1.0</priority>
   </url>
 
-  <!-- About Us -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/about.html</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>0.80</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/about.html</loc>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Programs & Impact -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/programs.html</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>0.85</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/gallery.html</loc>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Get Involved -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/get-involved.html</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>0.80</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/get-involved.html</loc>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Gallery -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/gallery.html</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>0.70</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/programs.html</loc>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Contact Us -->
   <url>
-    <loc>https://flowersonthorns.github.io/Flowersonthorns/contact.html</loc>
-    <lastmod>2025-08-11</lastmod>
-    <priority>0.80</priority>
+    <loc>https://heartofcompassionkenya.github.io/heartofcompassionkenya/contact.html</loc>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

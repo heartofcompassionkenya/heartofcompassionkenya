@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://flowersonthorns.github.io/Flowersonthorns/sitemap.xml
+
+Sitemap: https://heartofcompassionkenya.github.io/heartofcompassionkenya/sitemap.xml
