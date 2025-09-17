@@ -143,7 +143,7 @@ nav a.active {
 /* BUTTONS */
 .btn,
 .theme-btn {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -315,6 +315,3 @@ footer {
     margin: auto;
 }
 
-.contact-card {
-    
-}
