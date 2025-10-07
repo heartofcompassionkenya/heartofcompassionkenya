@@ -306,6 +306,12 @@ footer {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .get-in-touch {
+    margin:auto;
+    width: 100%;
+    text-align: center;
+    }
 }
 
 .contact-grid {
