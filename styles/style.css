@@ -308,10 +308,8 @@ footer {
     }
 
     .get-in-touch {
-    margin:auto;
     width: 100%;
     flex-direction: column;
-    padding: 0;
     text-align: center;
     }
 }
