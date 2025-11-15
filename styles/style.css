@@ -223,6 +223,50 @@ nav a.active {
     padding: 0.5rem;
 }
 
+/* SUPPORT A CHILD GRID */
+.support-section {
+  padding: 2rem;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* One profile per row */
+  gap: 2rem;
+}
+
+/* Each profile becomes a two-column layout */
+.support-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Image + Text */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+}
+
+/* Image styling */
+.profile-photo {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text styling */
+.profile-text {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 768px) {
+  .support-item {
+    grid-template-columns: 1fr;
+  }
+}
 /* CONTACT FORM */
 .contact-section {
     max-width: 100%;
