@@ -170,6 +170,10 @@ nav a.active {
 /* CONTENT SECTIONS */
 .intro {
     padding: 3rem 2rem;
+    text-align: left;
+}
+
+.intro h2 {
     text-align: center;
 }
 
