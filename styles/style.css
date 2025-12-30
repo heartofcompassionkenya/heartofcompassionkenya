@@ -389,3 +389,21 @@ a img:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 5px #388e3c) brightness(1.2);
 }
+
+/* ===============================
+   Newsletters & Circulars
+================================ */
+
+.newsletter-section {
+  margin-bottom: 60px;
+}
+
+.newsletter-card {
+  text-align: left;
+}
+
+.newsletter-date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
