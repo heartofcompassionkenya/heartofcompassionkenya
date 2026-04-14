@@ -183,12 +183,12 @@ nav a.active {
 }
 
 .highlights {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem;
     background-color: #f9f9f9;
-    justify-content: center;
+    justify-items: center;
 }
 
 .highlight-box {
@@ -407,4 +407,13 @@ a img:hover {
   font-size: 0.9em;
   color: #777;
   margin-bottom: 10px;
+}
+
+/* Newsletter-specific override */
+.newsletter-card {
+    text-align: left;
+}
+
+.newsletter-card p {
+    margin-bottom: 10px;
 }
