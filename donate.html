@@ -108,14 +108,7 @@
   </footer>
   <script>
     document.getElementById('mpesa-btn').addEventListener('click', function() {
-      const amount = prompt('Enter the amount you wish to donate (in KES):');
-      if (amount && !isNaN(amount) && amount > 0) {
-        document.getElementById('mpesa-instructions').style.display = 'block';
-        // Optionally, you can customize the instructions with the amount
-        // For example, update the text to include the amount
-      } else if (amount !== null) {
-        alert('Please enter a valid amount.');
-      }
+      document.getElementById('mpesa-instructions').style.display = 'block';
     });
   </script>
 </body>
