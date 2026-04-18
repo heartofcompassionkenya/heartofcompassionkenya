@@ -65,6 +65,19 @@
             Account Number: 1094764<br><br>
           </span>
       </p>
+      <p>For mobile payment via M-Pesa:</p>
+      <button id="mpesa-btn" class="btn" style="margin-bottom: 1rem;">Pay via M-Pesa Mobile</button>
+      <div id="mpesa-instructions" style="display: none; margin-top: 1rem; padding: 1rem; border: 1px solid #ccc; background-color: #f9f9f9;">
+        <p>Follow these steps to donate via M-Pesa:</p>
+        <ol>
+          <li>Select Pay Bill on the M-Pesa menu.</li>
+          <li>Enter Business Number: <strong>400200</strong></li>
+          <li>Enter Account Number: <strong>1094764</strong></li>
+          <li>Enter the amount you wish to donate.</li>
+          <li>Enter your M-Pesa PIN and confirm the transaction.</li>
+        </ol>
+        <p>You will receive a confirmation SMS once the payment is successful.</p>
+      </div>
       <p style="font-size: 20px;"><strong>Or via Bank transfer as follows:</strong><br></p>
 
       <p>
@@ -93,5 +106,17 @@
     <p><a href="https://heartofcompassionkenya.github.io/heartofcompassionkenya/sitemap.xml" style="display:none;">Sitemap</a></p>
 
   </footer>
+  <script>
+    document.getElementById('mpesa-btn').addEventListener('click', function() {
+      const amount = prompt('Enter the amount you wish to donate (in KES):');
+      if (amount && !isNaN(amount) && amount > 0) {
+        document.getElementById('mpesa-instructions').style.display = 'block';
+        // Optionally, you can customize the instructions with the amount
+        // For example, update the text to include the amount
+      } else if (amount !== null) {
+        alert('Please enter a valid amount.');
+      }
+    });
+  </script>
 </body>
 </html>
