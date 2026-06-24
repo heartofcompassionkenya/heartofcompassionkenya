@@ -75,7 +75,7 @@ nav a.active {
 .contact-banner {
     position: relative;
     /* increased height so a larger portion of hero photos is visible */
-    height: 720px;
+    height: 600px;
     overflow: hidden;
     text-align: center;
     padding: 0;
@@ -85,7 +85,7 @@ nav a.active {
 }
 
 .hero {
-    min-height: 720px;
+    min-height: 600px;
     background-color: #000; /* fallback during transitions to avoid grey gap */
 }
 
