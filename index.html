@@ -12,6 +12,18 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Preload hero images to avoid flashes between slides -->
+  <link rel="preload" as="image" href="images/hockg1.jpeg">
+  <link rel="preload" as="image" href="images/hock202604.jpeg">
+  <link rel="preload" as="image" href="images/hock5.jpeg">
+  <link rel="preload" as="image" href="images/hocku12.jpeg">
+  <script>
+    // JS fallback preloader for browsers that don't honor preload
+    (function(){
+      const imgs = ['images/hockg1.jpeg','images/hock202604.jpeg','images/hock5.jpeg','images/hocku12.jpeg'];
+      imgs.forEach(src => { const i = new Image(); i.src = src; });
+    })();
+  </script>
   
 </head>
 <body>

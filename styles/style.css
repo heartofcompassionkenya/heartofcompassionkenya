@@ -85,6 +85,7 @@ nav a.active {
 
 .hero {
     min-height: 360px;
+    background-color: #000; /* fallback during transitions to avoid grey gap */
 }
 
 .hero-slides {
@@ -104,7 +105,9 @@ nav a.active {
     background-size: cover;
     background-position: center;
     opacity: 0;
+    -webkit-animation: heroFade 32s ease-in-out infinite;
     animation: heroFade 32s ease-in-out infinite;
+    will-change: opacity;
     border-radius: inherit;
 }
 
@@ -125,15 +128,15 @@ nav a.active {
 }
 
 @keyframes heroFade {
-    0%, 8% {
-        opacity: 0;
-    }
-    10%, 25% {
-        opacity: 1;
-    }
-    27%, 100% {
-        opacity: 0;
-    }
+    /* Timeline per slide (relative to its own animation):
+       - stay hidden during pre-delay (0% -> small percent)
+       - fade in quickly, remain visible, then fade out
+       This prevents slides from being visible during their animation-delay. */
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 /* BANNER BACKGROUND IMAGES */
@@ -495,4 +498,22 @@ a img:hover {
 .newsletter-card a.btn {
     display: inline-block;
     margin-top: 0.5rem;
+}
+
+/* WebKit-prefixed keyframes for better Safari support */
+@-webkit-keyframes heroFade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    30% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        -webkit-animation: none;
+        animation: none;
+        opacity: 1; /* show first slide statically */
+    }
 }
