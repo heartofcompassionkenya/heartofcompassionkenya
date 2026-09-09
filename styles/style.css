@@ -235,8 +235,11 @@ nav a.active {
 }
 
 .banner {
-    text-align: center;
-    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
     background-color: #4CAF50;
 }
 
