@@ -274,28 +274,6 @@ nav a.active {
     text-align: center;
 }
 
-.highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    justify-items: center;
-}
-
-.highlight-box {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease-in-out;
-}
-
-.highlight-box:hover {
-    transform: translateY(-10px);
-}
 
 /* GALLERY GRID */
 .gallery-section {

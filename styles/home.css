@@ -83,3 +83,29 @@
 .intro-end {
     padding: 0 24%;
 }
+
+.program {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+.highlight-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.highlight-box:hover {
+    transform: translateY(-10px);
+}
