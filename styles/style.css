@@ -247,6 +247,10 @@ nav a.active {
     background-color: #388e3c;
 }
 
+.span-green {
+    color: #50B05D;
+}
+
 /* BUTTON CONTAINERS */
 .banner-button-container,
 .center-btn {
