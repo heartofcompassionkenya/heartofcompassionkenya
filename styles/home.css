@@ -123,3 +123,48 @@
 .btn-green { background-color: #1E8C52; }
 .btn-pink { background-color: #EA3E68; }
 .btn-orange { background-color: #F19308; }
+
+.bottom-banner {
+    background-color: #4CAF50;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+.banner-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: opacity 0.2s;
+}
+
+.banner-link:hover {
+    opacity: 0.85;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.banner-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.divider {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.arrow {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
