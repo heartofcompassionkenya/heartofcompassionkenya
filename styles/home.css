@@ -150,6 +150,18 @@
     z-index: 5;
 }
 
+.card-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    border: 5px solid white; 
+    object-fit: cover;
+    display: block;
+    margin: -30px auto 15px auto;
+    position: relative;
+    z-index: 2;
+}
+
 .highlights-content { padding: 1.5rem}
 
 .box-green {box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0px 10px 0 #C0E2CC;}
