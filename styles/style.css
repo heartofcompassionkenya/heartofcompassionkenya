@@ -26,6 +26,10 @@ h1 { font-size: 2.5rem; color: #113C67; }
 h2 { font-size: 1.8rem; color: #113C67; }
 h3 { font-size: 1.4rem; color: #113C67; }
 
+h1 { font-size: 2.5rem; color: #4CAF50; }
+h2 { font-size: 1.8rem; color: #4CAF50; }
+h3 { font-size: 1.4rem; color: #4CAF50; }
+
 p {
     font-size: 1.05rem;
     line-height: 1.8;
