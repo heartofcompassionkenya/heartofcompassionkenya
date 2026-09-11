@@ -239,12 +239,12 @@ nav a.active {
     font-weight: bold;
     display: inline-block;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover,
 .theme-btn:hover {
-    background-color: #388e3c;
+    transform: scale(1.1);
 }
 
 .span-green {

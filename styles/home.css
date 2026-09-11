@@ -20,8 +20,8 @@
     background-image: url('../images/hero.svg');
     background-size: contain; 
     
-    background-repeat: no-repeat; /* 画像が繰り返されないようにする */
-    background-position: right center; /* 右側に寄せる */
+    background-repeat: no-repeat;
+    background-position: right center;
     position: relative;
 }
 .hero-content {
