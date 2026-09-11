@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: auto;
+    padding: 1rem;
     color: white;
     background-color: #4CAF50;
 }
@@ -263,7 +264,7 @@
         border-bottom: none;
     }
     .intro-end {
-        padding: 0;
+        padding: 0 10%;
     }
     .program {
         padding: 3rem 0;
