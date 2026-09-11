@@ -244,3 +244,32 @@
     font-size: 1.2rem;
     transition: transform 0.2s;
 }
+
+@media screen and (max-width: 768px) {
+    .intro {
+        padding: 3rem 0;
+    }
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .intro-item {
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 0;
+    }
+
+    .intro-item:last-child {
+        border-bottom: none;
+    }
+    .intro-end {
+        padding: 0;
+    }
+    .program {
+        padding: 3rem 0;
+    }
+    .highlights {
+        grid-template-columns: 1fr;
+        padding: 1rem; 
+    }
+}
