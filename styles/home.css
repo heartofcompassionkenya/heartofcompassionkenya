@@ -1,6 +1,6 @@
-h1 { font-size: 2.5rem; color: #113C67; }
-h2 { font-size: 1.8rem; color: #113C67; }
-h3 { font-size: 1.4rem; color: #113C67; }
+h1 { font-size: 2.5rem; color: var(--header-color); }
+h2 { font-size: 1.8rem; color: var(--header-color); }
+h3 { font-size: 1.4rem; color: var(--header-color); }
 
 .banner {
     display: flex;
@@ -9,12 +9,12 @@ h3 { font-size: 1.4rem; color: #113C67; }
     height: auto;
     padding: 1rem;
     color: white;
-    background-color: #4CAF50;
+    background-color: var(--main-color);
 }
 
 .hero-text h1,
 .hero-text p {
-    color: #113C67;
+    color: var(--header-color);
 }
 
 .hero-overlay {
@@ -70,11 +70,11 @@ h3 { font-size: 1.4rem; color: #113C67; }
 .heart-divider .line {
     width: 40px;
     height: 3px;
-    background-color: #1E8C52;
+    background-color: var(--dark-green);
 }
 
 .heart-divider .heart {
-    color: #1E8C52;
+    color: var(--dark-green);
     font-size: 40px;
     line-height: 1;
 }
@@ -145,7 +145,7 @@ h3 { font-size: 1.4rem; color: #113C67; }
 .program-title .line {
     width: 40px; 
     height: 3px; 
-    background-color: #1E8C52; 
+    background-color: var(--dark-green); 
 }
 
 .program-title h1 {
@@ -197,16 +197,16 @@ h3 { font-size: 1.4rem; color: #113C67; }
     transform: translateY(-10px);
 }
 
-.text-green { color: #1E8C52 }
+.text-green { color: var(--dark-green) }
 .text-pink { color: #EA3E68 }
 .text-orange { color: #F19308 }
 
-.btn-green { background-color: #1E8C52; }
+.btn-green { background-color: var(--dark-green); }
 .btn-pink { background-color: #EA3E68; }
 .btn-orange { background-color: #F19308; }
 
 .bottom-banner {
-    background-color: #4CAF50;
+    background-color: var(--main-color);
     padding: 1.5rem 1rem;
     text-align: center;
     width: 100%;
