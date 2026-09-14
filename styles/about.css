@@ -1,0 +1,180 @@
+:root{
+  --navy:#153862;
+  --navy-2:#0E2A4B;
+  --green:#2F9E52;
+  --green-dark:#248044;
+  --green-light:#EAF6EC;
+  --pink:#E8527C;
+  --pink-light:#FBE6EC;
+  --blue:#4F86C9;
+  --blue-light:#E9F1FB;
+  --orange:#F0A63D;
+  --orange-light:#FDF1E1;
+  --ink:#22303F;
+  --gray:#5C6B7A;
+  --line:#E4E9ED;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;line-height:1.65;}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;color:var(--navy);}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 40px;border-bottom:1px solid var(--line);}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{width:40px;height:40px;border-radius:50%;background:var(--green-light);display:flex;align-items:center;justify-content:center;color:var(--pink);font-size:20px;}
+.brand-text{font-family:'Poppins',sans-serif;line-height:1.15;}
+.brand-text strong{display:block;color:var(--navy);font-size:15px;font-weight:700;}
+.brand-text span{display:block;font-size:10px;color:var(--gray);letter-spacing:.2px;}
+nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:500;color:var(--navy);}
+nav a.current{background:var(--green);color:#fff;padding:9px 20px;border-radius:22px;}
+
+/* topbar */
+.topbar{background:var(--green);color:#fff;text-align:center;font-size:13px;padding:9px 16px;font-weight:500;}
+
+/* hero */
+.hero{position:relative;min-height:380px;display:flex;align-items:flex-end;color:#fff;
+  background:linear-gradient(0deg, rgba(14,42,75,.88) 10%, rgba(14,42,75,.45) 60%, rgba(14,42,75,.2) 100%),
+  url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/hock2026065.jpg') center/cover;}
+.hero-inner{padding:64px 40px 44px;max-width:1120px;margin:0 auto;width:100%;}
+.crumb{font-size:13px;color:#BFE1CC;font-weight:500;margin-bottom:14px;}
+.crumb span{color:#fff;}
+.hero h1{color:#fff;font-size:40px;font-weight:700;line-height:1.2;max-width:620px;}
+.hero p{margin-top:14px;max-width:560px;color:#E7EEF5;font-size:15px;}
+
+/* stat strip */
+.stats{background:var(--navy);}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0;}
+.stat{text-align:center;padding:26px 12px;border-right:1px solid rgba(255,255,255,.12);}
+.stat:last-child{border-right:none;}
+.stat b{display:block;font-family:'Poppins',sans-serif;font-size:26px;color:#fff;font-weight:700;}
+.stat span{display:block;font-size:12.5px;color:#B9C8D8;margin-top:4px;}
+
+/* section shell */
+section{padding:64px 0;}
+.section-head{text-align:center;max-width:640px;margin:0 auto 40px;}
+.rule{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;}
+.rule .line{width:34px;height:2px;background:var(--green);border-radius:2px;}
+.rule .dot{color:var(--pink);font-size:16px;}
+.section-head h2{font-size:27px;font-weight:700;}
+.section-head p{color:var(--gray);font-size:14.5px;margin-top:10px;}
+.bg-tint{background:var(--green-light);}
+
+/* who we are — full-bleed photo with overlay */
+.who{position:relative;min-height:420px;border-radius:20px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;
+  background:linear-gradient(100deg, rgba(14,42,75,.92) 30%, rgba(14,42,75,.35) 75%),
+  url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/hock2026065.jpg') center/cover;
+  transition:transform .6s ease;}
+.who-inner{padding:52px;max-width:600px;}
+.who:hover{transform:scale(1.01);}
+.who h2{color:#fff;font-size:27px;font-weight:700;margin-bottom:16px;}
+.who p{color:#E7EEF5;font-size:14.5px;margin-bottom:14px;}
+
+/* timeline */
+.timeline{position:relative;max-width:880px;margin:0 auto;padding-left:6px;}
+.timeline::before{content:"";position:absolute;left:19px;top:6px;bottom:6px;width:2px;background:var(--line);}
+.t-item{position:relative;padding-left:56px;margin-bottom:34px;}
+.t-item:last-child{margin-bottom:0;}
+.t-dot{position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:12.5px;display:flex;align-items:center;justify-content:center;}
+.t-item h4{font-size:15.5px;margin-bottom:6px;}
+.t-item p{color:var(--gray);font-size:14px;max-width:640px;}
+
+/* timeline thumb */
+.t-item.has-photo{padding-left:0;display:grid;grid-template-columns:56px 1fr auto;gap:0 20px;align-items:start;}
+.t-item.has-photo .t-dot{position:static;}
+.t-thumb{width:64px;height:64px;border-radius:12px;overflow:hidden;flex:none;}
+.t-thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;}
+
+/* mission vision */
+.mv{display:flex;flex-direction:column;gap:24px;}
+.mv-card{display:grid;grid-template-columns:280px 1fr;border-radius:16px;border:1px solid var(--line);overflow:hidden;}
+.mv-photo{height:100%;min-height:180px;overflow:hidden;}
+.mv-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.mv-card:hover .mv-photo img{transform:scale(1.05);}
+.mv-body{padding:30px 34px;align-self:center;}
+.mv-card .ico{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;}
+.mv-card.mission .ico{background:var(--green-light);color:var(--green-dark);}
+.mv-card.vision .ico{background:var(--blue-light);color:var(--blue);}
+.mv-card h3{font-size:17px;margin-bottom:10px;}
+.mv-card p{color:var(--gray);font-size:14.5px;}
+
+/* core values */
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;}
+.value{padding:0 18px;position:relative;}
+.value + .value::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--line);}
+.value .ico{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;}
+.value h4{font-size:15px;margin-bottom:8px;}
+.value p{font-size:13px;color:var(--gray);}
+.v1 .ico{background:var(--green-light);color:var(--green-dark);}
+.v2 .ico{background:var(--pink-light);color:var(--pink);}
+.v3 .ico{background:var(--blue-light);color:var(--blue);}
+.v4 .ico{background:var(--orange-light);color:var(--orange);}
+
+/* goals */
+.goals-panel{background:var(--green-light);border-radius:20px;padding:40px 44px;}
+.goals-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;}
+.goal{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--ink);}
+.goal .check{width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;font-size:12px;margin-top:1px;}
+
+/* target group */
+.chips{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+.chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:12px 22px;font-size:14px;font-weight:500;color:var(--navy);}
+.chip .dot{width:9px;height:9px;border-radius:50%;}
+.chip:nth-child(1) .dot{background:var(--green);}
+.chip:nth-child(2) .dot{background:var(--pink);}
+.chip:nth-child(3) .dot{background:var(--blue);}
+.chip:nth-child(4) .dot{background:var(--orange);}
+
+/* cta */
+.cta{background:var(--green);color:#fff;padding:22px 0;}
+.cta .wrap{display:flex;align-items:center;justify-content:center;gap:14px;font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;}
+footer{background:var(--navy-2);color:#B9C8D8;text-align:center;padding:20px;font-size:13px;}
+
+/* gentle entrance animation */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+.hero-inner .crumb,.hero-inner h1,.hero-inner p{opacity:0;animation:fadeUp .9s ease forwards;}
+.hero-inner h1{animation-delay:.12s;}
+.hero-inner p{animation-delay:.26s;}
+.stat{opacity:0;animation:fadeUp .8s ease forwards;}
+.stat:nth-child(1){animation-delay:.05s;}
+.stat:nth-child(2){animation-delay:.15s;}
+.stat:nth-child(3){animation-delay:.25s;}
+.stat:nth-child(4){animation-delay:.35s;}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+.reveal-group>*{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease;}
+.reveal-group.in-view>*{opacity:1;transform:translateY(0);}
+.reveal-group.in-view>*:nth-child(1){transition-delay:.05s;}
+.reveal-group.in-view>*:nth-child(2){transition-delay:.15s;}
+.reveal-group.in-view>*:nth-child(3){transition-delay:.25s;}
+.reveal-group.in-view>*:nth-child(4){transition-delay:.35s;}
+.reveal-group.in-view>*:nth-child(5){transition-delay:.45s;}
+.reveal-group.in-view>*:nth-child(6){transition-delay:.55s;}
+.reveal-group.in-view>*:nth-child(7){transition-delay:.65s;}
+
+/* gentle hover motion */
+.mv-card,.value,.chip,.info-row{transition:transform .35s ease, border-color .35s ease;}
+.mv-card:hover{transform:translateY(-4px);border-color:var(--green);}
+.value{transition:transform .35s ease;}
+.value:hover{transform:translateY(-4px);}
+.value .ico{transition:transform .35s ease;}
+.value:hover .ico{transform:scale(1.08);}
+.chip{transition:transform .3s ease, border-color .3s ease;}
+.chip:hover{transform:translateY(-3px);border-color:var(--green);}
+nav a{transition:opacity .25s ease;}
+nav a:hover{opacity:.7;}
+nav a.current{transition:transform .25s ease, box-shadow .25s ease;}
+nav a.current:hover{transform:translateY(-2px);}
+.goal{transition:transform .3s ease;}
+.goal:hover{transform:translateX(3px);}
+.t-dot{transition:transform .3s ease;}
+.t-item:hover .t-dot{transform:scale(1.08);}
+.cta{transition:background .3s ease;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+  .reveal,.reveal-group>*{opacity:1;transform:none;}
+}
