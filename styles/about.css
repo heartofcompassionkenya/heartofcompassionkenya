@@ -126,7 +126,6 @@ section{padding:64px 0;}
 /* cta */
 .cta{background:var(--green);color:#fff;padding:22px 0;}
 .cta .wrap{display:flex;align-items:center;justify-content:center;gap:14px;font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;}
-footer{background:var(--navy-2);color:#B9C8D8;text-align:center;padding:20px;font-size:13px;}
 
 /* gentle entrance animation */
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
