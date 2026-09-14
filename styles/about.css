@@ -57,7 +57,7 @@ section{padding:64px 0;}
 .section-head{text-align:center;max-width:640px;margin:0 auto 40px;}
 .rule{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;}
 .rule .line{width:34px;height:2px;background:var(--green);border-radius:2px;}
-.rule .dot{color:var(--pink);font-size:16px;}
+.rule .dot{color:var(--green);font-size:16px;}
 .section-head h2{font-size:27px;font-weight:700;}
 .section-head p{color:var(--gray);font-size:14.5px;margin-top:10px;}
 .bg-tint{background:var(--green-light);}
