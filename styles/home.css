@@ -59,25 +59,9 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
     background-color: #F5FAF5;
 }
 
-.heart-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 1.5rem 0;
-}
-
-.heart-divider .line {
-    width: 40px;
-    height: 3px;
-    background-color: var(--dark-green);
-}
-
-.heart-divider .heart {
-    color: var(--dark-green);
-    font-size: 40px;
-    line-height: 1;
-}
+.rule{display:flex;align-items:center;justify-content:center;gap:.625rem;margin-bottom:.625rem;}
+.rule .line{width:34px;height:2px;background:var(--main-color);border-radius:2px;}
+.rule .dot{color:var(--main-color);font-size:1rem;}
 
 .intro-content {
     text-align: center;
