@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #4CAF50;
+    --header-color: #113C67;
+    --dark-green: #1E8C52;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -80,7 +86,6 @@ nav a.active {
     text-align: center;
     padding: 0;
     max-width: 1200px;
-    margin: 2rem auto;
     border-radius: 8px;
 }
 
@@ -194,7 +199,7 @@ nav a.active {
 /* BANNER IMAGE (for pages where images are in HTML, remove absolute images) */
 
 /* BANNER OVERLAY */
-.hero .hero-overlay,
+/* .hero .hero-overlay, */
 .about-banner .overlay,
 .programs-bg .overlay,
 .gallery-banner .overlay,
@@ -203,7 +208,7 @@ nav a.active {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.35);
+    background-color: white;
     z-index: 1;
     border-radius: 8px;
     display: flex;
@@ -213,7 +218,6 @@ nav a.active {
 }
 
 /* BANNER TEXT */
-.hero-text,
 .about-banner > *:not(img):not(.overlay),
 .programs-bg > *:not(img):not(.overlay),
 .gallery-banner > *:not(img):not(.overlay),
@@ -228,36 +232,30 @@ nav a.active {
     padding: 1rem;
 }
 
-/* Specifically force white text for home page hero-text */
-.hero-text h1,
-.hero-text p {
-    color: white !important;
-}
-
-.banner {
-    text-align: center;
-    padding-top: 20px;
-    background-color: #4CAF50;
-}
 
 /* BUTTONS */
 .btn,
 .theme-btn {
-    background-color: blue;
+    background-color: #1E8C52;
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover,
 .theme-btn:hover {
-    background-color: #388e3c;
+    transform: scale(1.1);
+}
+
+.span-green {
+    color: #50B05D;
+    font-weight: bold;
 }
 
 /* BUTTON CONTAINERS */
@@ -268,10 +266,6 @@ nav a.active {
 }
 
 /* CONTENT SECTIONS */
-.intro {
-    padding: 3rem 2rem;
-    text-align: center;
-}
 
 .initial-intro {
     padding: 3rem 2rem;
@@ -282,28 +276,6 @@ nav a.active {
     text-align: center;
 }
 
-.highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    justify-items: center;
-}
-
-.highlight-box {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease-in-out;
-}
-
-.highlight-box:hover {
-    transform: translateY(-10px);
-}
 
 /* GALLERY GRID */
 .gallery-section {
@@ -435,10 +407,18 @@ nav a.active {
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100px;
     background-color: #b30000;
     color: white;
-    text-align: center;
-    padding: 15px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
 }
 
 /* RESPONSIVE */
@@ -449,7 +429,7 @@ footer {
     .highlight-box {
         width: 90%;
     }
-    .hero, 
+    /* .hero,  */
     .about-banner, 
     .programs-bg, 
     .gallery-banner, 
