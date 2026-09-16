@@ -209,8 +209,8 @@ section{padding:3rem 2rem;}
     overflow:visible;
   }
   .hero-inner{padding:2.5rem 1.25rem;}
-  .hero h1{font-size:1.8rem;max-width:100%;}
-  .hero p{font-size:.875rem;max-width:100%;}
+  .hero h1{max-width:100%;}
+  .hero p{max-width:100%;}
 
   section{padding:2rem 1.25rem;}
   .section-head{margin:0 auto 1.75rem;}
@@ -235,7 +235,7 @@ section{padding:3rem 2rem;}
   .goals-panel{padding:1.75rem 1.5rem;}
 
   .chips{gap:.625rem;}
-  .chip{padding:.625rem 1.125rem;font-size:.8rem;}
+  .chip{padding:.625rem 1.125rem;}
 
-  .cta-link{flex-wrap:wrap;text-align:center;padding:1.125rem 1.25rem;font-size:.95rem;}
+  .cta-link{flex-wrap:wrap;text-align:center;padding:1.125rem 1.25rem;}
 }
