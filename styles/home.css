@@ -12,7 +12,7 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
     background-color: var(--main-color);
 }
 
-.hero-text h1,
+/* .hero-text h1,
 .hero-text p {
     color: var(--header-color);
 }
@@ -51,7 +51,15 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
 
 .hero-content .btn {
     width: 40%;
-}
+} */
+
+.hero{position:relative;min-height:380px;align-items:center;color: var(--header-color);
+  background:linear-gradient(90deg, rgba(255,255,255,.88) 10%, rgba(255,255,255,.45) 60%, rgba(255,255,255,.2) 100%),
+  url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/photo12.jpeg') center/cover;}
+.hero-inner{padding:4rem 2.5rem 2.75rem;max-width:1120px;margin:0 auto;width:100%;text-align:left;}
+.crumb{color: var(--header-color);font-weight:500;margin-bottom:.875rem;}
+.hero h1{color:var(--header-color);line-height:1.2;max-width:620px;}
+.hero p{margin-top:.875rem;max-width:560px;color:var(--header-color);}
 
 .intro {
     padding: 3rem 2rem;
