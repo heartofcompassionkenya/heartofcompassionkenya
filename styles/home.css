@@ -12,46 +12,13 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
     background-color: var(--main-color);
 }
 
-.hero-text h1,
-.hero-text p {
-    color: var(--header-color);
-}
-
-.hero-overlay {
-    display: flex;
-    align-items: center; 
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/hero.svg');
-    background-size: contain; 
-    
-    background-repeat: no-repeat;
-    background-position: right center;
-    position: relative;
-}
-.hero-content {
-    width: 55%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    padding: 0 8% 0 10%;
-    
-    background: rgba(255, 255, 255, 0.85); 
-    backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(10px);
-    
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to right, black 70%, transparent 100%);
-}
-.hero-text {
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.hero-content .btn {
-    width: 40%;
-}
+.hero{position:relative;min-height:380px;align-items:center;color: var(--header-color);display: flex;
+  background:linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.7) 35%, rgba(255,255,255,0) 65%),
+  url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/1001119416.jpg') center/cover;}
+.hero-inner{padding:4rem 2.5rem 2.75rem;max-width:1120px;margin:0 auto;width:100%;text-align:left;}
+.crumb{color: var(--header-color);font-weight:500;margin-bottom:.875rem;}
+.hero h1{color:var(--header-color);line-height:1.2;max-width:620px;}
+.hero p{margin-top:.875rem;max-width:560px;color:var(--header-color);}
 
 .intro {
     padding: 3rem 2rem;
@@ -59,25 +26,9 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
     background-color: #F5FAF5;
 }
 
-.heart-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 1.5rem 0;
-}
-
-.heart-divider .line {
-    width: 40px;
-    height: 3px;
-    background-color: var(--dark-green);
-}
-
-.heart-divider .heart {
-    color: var(--dark-green);
-    font-size: 40px;
-    line-height: 1;
-}
+.rule{display:flex;align-items:center;justify-content:center;gap:.625rem;margin-bottom:.625rem;}
+.rule .line{width:34px;height:2px;background:var(--main-color);border-radius:2px;}
+.rule .dot{color:var(--main-color);font-size:1rem;}
 
 .intro-content {
     text-align: center;
@@ -205,44 +156,43 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
 .btn-pink { background-color: #EA3E68; }
 .btn-orange { background-color: #F19308; }
 
-.bottom-banner {
-    background-color: var(--main-color);
-    padding: 1.5rem 1rem;
-    text-align: center;
-    width: 100%;
-    border-radius: 50px 50px 0 0;
+/* cta */
+.cta{background:var(--main-color);}
+.cta-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.875rem;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:1.05rem;
+  padding:1.375rem 0;
 }
 
-.banner-link {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: opacity 0.2s;
+.cta-text{
+  position:relative;
+}
+.cta-text::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#fff;
+  transition:width .3s ease;
+}
+.cta-link:hover .cta-text::after{
+  width:100%;
 }
 
-.banner-link:hover {
-    opacity: 0.85;
+.cta-arrow{
+  display:inline-block;
+  transition:transform .3s ease;
 }
-
-.banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
-}
-
-.banner-icon {
-    font-size: 1.3rem;
-    line-height: 1;
-}
-
-.divider {
-    display: inline-block;
-    width: 1px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+.cta-link:hover .cta-arrow{
+  transform:translateX(6px);
 }
 
 .arrow {
@@ -250,31 +200,72 @@ h3 { font-size: 1.4rem; color: var(--header-color); }
     transition: transform 0.2s;
 }
 
-@media screen and (max-width: 768px) {
-    .intro {
-        padding: 3rem 0;
-    }
-    .intro-container {
-        flex-direction: column;
-    }
+/* ===============================
+   ANIMATIONS — matches about.css
+================================ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+.hero-inner .crumb,.hero-inner h1,.hero-inner p,.hero-inner .btn{opacity:0;animation:fadeUp .9s ease forwards;}
+.hero-inner h1{animation-delay:.12s;}
+.hero-inner p{animation-delay:.26s;}
+.hero-inner .btn{animation-delay:.4s;}
 
-    .intro-item {
-        border-right: none;
-        border-bottom: 1px solid #e2e8f0;
-        padding: 0;
-    }
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
+.reveal.in-view{opacity:1;transform:translateY(0);}
+.reveal-group>*{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease;}
+.reveal-group.in-view>*{opacity:1;transform:translateY(0);}
+.reveal-group.in-view>*:nth-child(1){transition-delay:.05s;}
+.reveal-group.in-view>*:nth-child(2){transition-delay:.15s;}
+.reveal-group.in-view>*:nth-child(3){transition-delay:.25s;}
+.reveal-group.in-view>*:nth-child(4){transition-delay:.35s;}
 
-    .intro-item:last-child {
-        border-bottom: none;
-    }
-    .intro-end {
-        padding: 0 10%;
-    }
-    .program {
-        padding: 3rem 0;
-    }
-    .highlights {
-        grid-template-columns: 1fr;
-        padding: 1rem; 
-    }
+/* gentle hover motion */
+.intro-item{transition:transform .35s ease;}
+.intro-item:hover{transform:translateY(-4px);}
+.highlight-box{transition:transform .35s ease;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+  .reveal,.reveal-group>*{opacity:1;transform:none;}
+}
+
+/* ===============================
+   RESPONSIVE — Tablet (≤1024px)
+================================ */
+@media (max-width: 1024px){
+  .hero{height:auto;overflow:visible;
+        background:linear-gradient(0deg, rgba(255,255,255,.44) 20%, rgba(255,255,255,.88) 100%),
+        url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/1001119416.jpg') center/cover;}
+  .hero-inner{padding:3rem 1.75rem 2.25rem;}
+
+  .intro-container{flex-wrap:wrap;}
+  .intro-item{flex:1 1 45%;border-right:none;border-bottom:1px solid #e2e8f0;}
+
+  .highlights{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ===============================
+   RESPONSIVE — Mobile (≤768px)
+================================ */
+@media (max-width: 768px){
+  .hero{height:auto;min-height:320px;overflow:visible;
+        background:linear-gradient(0deg, rgba(255,255,255,.44) 20%, rgba(255,255,255,.92) 100%),
+        url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/1001119416.jpg') center/cover;}
+  .hero-inner{padding:2.5rem 1.25rem;}
+  .hero h1{max-width:100%;}
+  .hero p{max-width:100%;}
+  .hero-inner .btn{width:100%;text-align:center;max-width:200px;}
+
+  .banner{padding:.75rem 1rem;}
+
+    .intro {padding: 3rem 0;}
+    .intro-container {flex-direction: column;}
+    .intro-item {border-right: none;border-bottom: 1px solid #e2e8f0;padding: 0;}
+    .intro-item:last-child {border-bottom: none;}
+    .intro-end {padding: 0 10%;}
+    .intro-item{flex:1 1 100%;}
+
+    .program {padding: 3rem 0;}
+    .highlights {grid-template-columns: 1fr;padding: 1rem;}
+
+    .cta-link{flex-wrap:wrap;text-align:center;padding:1.125rem 1.25rem;}
 }
