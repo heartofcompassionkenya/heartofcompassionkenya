@@ -131,9 +131,8 @@ section{padding:3rem 2rem;}
   .stat-row{flex-wrap:wrap;}
   .stat-cell{flex:1 1 45%;border-left:none;margin-bottom:1.5rem;}
 
-  .pillar,.pillar.reverse{grid-template-columns:1fr;gap:1.5rem;}
-  .pillar.reverse .pillar-media{order:1;}
-  .pillar.reverse .pillar-body{order:2;}
+  .pillar{gap:1.75rem;}
+  .pillar-media{height:220px;}
   .pillar-media{height:220px;}
 
   .facility-grid{grid-template-columns:repeat(2,1fr);}
@@ -147,26 +146,30 @@ section{padding:3rem 2rem;}
    RESPONSIVE -- Mobile (<=768px)
 ================================ */
 @media (max-width: 768px){
+    .wrap{padding: 0;}
   .hero{height:auto;min-height:320px;overflow:visible;}
   .hero-inner{padding:2.5rem 1.25rem;}
   .hero h1{max-width:100%;}
   .hero p{max-width:100%;}
-
-  section{padding:2rem 1.25rem;}
+  
+  section{padding:1.5rem .75rem;}
   .section-head{margin:0 auto 1.75rem;}
 
   .stat-row{flex-direction:column;gap:1.5rem;}
   .stat-cell{border-left:none;padding:0;}
 
+  .pillar,.pillar.reverse{grid-template-columns:1fr;gap:1.5rem;}
+  .pillar.reverse .pillar-media{order:1;}
+  .pillar.reverse .pillar-body{order:2;}
   .pillar-media{height:190px;}
   .pillar-num{font-size:1.5rem;}
 
   .facility-row{grid-template-columns:1fr 1fr;gap:1rem;}
 
-  .facility-grid{grid-template-columns:1fr 1fr;gap:1rem;}
-  .facility-card{height:170px;}
+  .facility-grid{grid-template-columns:1fr;gap:1rem;}
+  .facility-card{height:200px;}
 
-  .advocacy-quote{padding:2.5rem 1.5rem;border-radius:14px;}
+  .advocacy-quote{padding:1rem 1rem;border-radius:14px;}
   .advocacy-quote .mark{font-size:3rem;}
   .advocacy-quote p{font-size:1.15rem;}
 
