@@ -18,7 +18,7 @@ h1,h2,h3,h4{color:var(--header-color);}
 /* hero -- same pattern as about.html, for site-wide unity */
 .hero{position:relative;min-height:380px;display:flex;align-items:center;color:#fff;
   background:linear-gradient(90deg, rgba(17,60,103,.88) 10%, rgba(17,60,103,.45) 60%, rgba(17,60,103,.2) 100%),
-  url('images/hock2026067.jpg') center/cover;}
+  url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/hock202605.jpeg') center/cover;}
 .hero-inner{padding:4rem 2.5rem 2.75rem;max-width:1120px;margin:0 auto;width:100%;text-align:left;}
 .crumb{color:#BFE1CC;font-weight:500;margin-bottom:.875rem;}
 .crumb span{color:#fff;}
