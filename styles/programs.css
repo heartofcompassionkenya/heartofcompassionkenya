@@ -76,8 +76,8 @@ section{padding:3rem 2rem;}
   background:linear-gradient(0deg, rgba(17,60,103,.92) 0%, rgba(17,60,103,.25) 55%, rgba(17,60,103,0) 78%);}
 .facility-card .accent{position:absolute;top:0;left:0;right:0;height:4px;z-index:2;}
 .facility-card-body{position:absolute;left:0;right:0;bottom:0;padding:1.25rem;z-index:1;}
-.facility-card-body h4{color:#fff;font-size:1rem;margin-bottom:.25rem;}
-.facility-card-body p{font-size:.8rem;color:#E7EEF5;margin-bottom:0;}
+.facility-card-body h3{color:#fff;margin-bottom:.25rem;}
+.facility-card-body p{color:#E7EEF5;margin-bottom:0;}
 
 /* advocacy -- elegant serif quote, single accent color */
 .advocacy-quote{background:var(--header-color);border-radius:20px;padding:4rem 3rem;text-align:center;max-width:1120px;margin:0 auto;}
