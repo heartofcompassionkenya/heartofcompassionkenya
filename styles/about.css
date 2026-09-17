@@ -232,7 +232,7 @@ section{padding:3rem 2rem;}
     .mv-card{border-radius:12px;grid-template-columns:1fr;}
     .mv-photo{height:220px;}
     .mv-card.mission .mv-photo img,
-    .mv-card.vision .mv-photo img{object-position:center center;
+    .mv-card.vision .mv-photo img{object-position:center center;}
     .mv-body{padding:1.5rem;}
 
   .values{grid-template-columns:1fr;row-gap:1.75rem;}
