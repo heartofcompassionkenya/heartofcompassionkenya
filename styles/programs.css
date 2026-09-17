@@ -39,12 +39,12 @@ section{padding:3rem 2rem;}
 .stat-cell{flex:1;text-align:center;padding:0 1.5rem;border-left:1px solid var(--line);}
 .stat-cell:first-child{border-left:none;}
 .stat-num{font-size:2.75rem;font-weight:700;line-height:1;margin-bottom:.625rem;}
-.stat-cell p{font-size:.85rem;color:var(--gray);margin-bottom:0;}
+.stat-cell p{color:var(--gray);margin-bottom:0;}
 .stat-num.c1{color:var(--dark-green);}
 .stat-num.c2{color:var(--blue);}
 .stat-num.c3{color:var(--pink);}
 .stat-num.c4{color:var(--orange);}
-.stat-caption{text-align:center;max-width:640px;margin:2rem auto 0;font-size:.9rem;color:var(--gray);font-style:italic;}
+.stat-caption{text-align:center;max-width:640px;margin:2rem auto 0;color:var(--gray);font-style:italic;}
 
 /* three pillars -- zig-zag layout */
 .pillar{display:grid;grid-template-columns:1fr 1.3fr;gap:2.5rem;align-items:center;margin-bottom:3rem;}
