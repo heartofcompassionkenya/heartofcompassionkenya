@@ -63,6 +63,9 @@ section{padding:3rem 2rem;}
 .mv-card{display:grid;grid-template-columns:280px 1fr;align-items:stretch;border-radius:16px;border:1px solid var(--line);overflow:hidden;}
 .mv-photo{height:220px;overflow:hidden;}
 .mv-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.mv-photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.mv-card.mission .mv-photo img{object-position:20% 40%;}
+.mv-card.vision .mv-photo img{object-position:85% 60%;}
 .mv-card:hover .mv-photo img{transform:scale(1.05);}
 .mv-body{padding:1.875rem 2.125rem;align-self:center;}
 .mv-card .ico{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.25rem;margin-bottom:.875rem;}
@@ -226,9 +229,11 @@ section{padding:3rem 2rem;}
   .t-item{padding-left:3.75rem;margin-bottom:1.75rem;}
   .t-dot{width:40px;height:40px;font-size:.75rem;}
 
-  .mv-card{border-radius:12px;grid-template-columns:1fr;}
-  .mv-photo{height:180px;}
-  .mv-body{padding:1.5rem;}
+    .mv-card{border-radius:12px;grid-template-columns:1fr;}
+    .mv-photo{height:220px;}
+    .mv-card.mission .mv-photo img,
+    .mv-card.vision .mv-photo img{object-position:center center;
+    .mv-body{padding:1.5rem;}
 
   .values{grid-template-columns:1fr;row-gap:1.75rem;}
 
