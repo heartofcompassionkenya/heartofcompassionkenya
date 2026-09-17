@@ -86,7 +86,7 @@ section{padding:3rem 2rem;}
 .advocacy-quote p{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;
   font-size:1.75rem;color:#fff;line-height:1.6;max-width:680px;margin:0 auto 1.5rem;}
 .advocacy-quote .rule-line{display:block;width:50px;height:2px;background:var(--main-color);margin:0 auto 1rem;}
-.advocacy-quote .label{font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:.08em;
+.advocacy-quote .label{font-family:Arial,sans-serif;letter-spacing:.08em;
   text-transform:uppercase;color:#B9C8D8;font-weight:700;}
 
 /* cta -- same as about/home, kept identical as the site-wide closing band */
