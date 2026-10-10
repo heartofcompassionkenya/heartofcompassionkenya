@@ -14,7 +14,7 @@ h1,h2,h3,h4{color:var(--header-color);}
 
 /* hero */
 .hero{position:relative;min-height:380px;display:flex;align-items:center;color:#fff;
-  background:linear-gradient(90deg, rgba(17,60,103,.88) 10%, rgba(17,60,103,.45) 60%, rgba(17,60,103,.2) 100%),
+  background:linear-gradient(90deg, rgba(17,60,103,.58) 10%, rgba(17,60,103,.28) 60%, rgba(17,60,103,.1) 100%),
   url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/hock2026065.jpg') center/cover;}
 .hero-inner{padding:4rem 2.5rem 2.75rem;max-width:1120px;margin:0 auto;width:100%;text-align:left;}
 .crumb{color:#BFE1CC;font-weight:500;margin-bottom:.875rem;}
@@ -41,7 +41,7 @@ section{padding:3rem 2rem;}
 
 /* who we are — full-bleed photo with overlay */
 .who{position:relative;min-height:420px;border-radius:20px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;
-  background:linear-gradient(100deg, rgba(17,60,103,.92) 30%, rgba(17,60,103,.35) 75%),
+  background:linear-gradient(100deg, rgba(17,60,103,.62) 30%, rgba(17,60,103,.22) 75%),
   url('https://heartofcompassionkenya.github.io/heartofcompassionkenya/images/hock2026065.jpg') center/cover;
   transition:transform .6s ease;}
 .who-inner{padding:3.25rem;max-width:600px;}
